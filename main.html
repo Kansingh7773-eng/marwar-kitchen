@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwar Kitchen</title>
+    <link rel="stylesheet" href="MARWAR.CSS">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+            background-image: url("images/background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px 30px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #498fe6;
+            border-radius: 5px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .grid-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .grid-item img, .grid-item video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #cc5200;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">MARWAR KITCHEN</div>
+        <div>
+            <a href="#">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="menu.html">MENU</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <h1>ABOUT US</h1>
+            <p>Welcome to Marwar Kitchen, a renowned Rajasthani restaurant in Udaipur, offering authentic flavors of Dal Bati Churma.</p>
+            <a href="KAN.HTML" class="btn">Learn More</a>
+        </div>
+
+        <div class="grid-item">
+            <img src="images/dal_baati.jpg" alt="Daal Baati">
+        </div>
+
+        <div class="grid-item">
+            <video controls>
+                <source src="videos/marwar_kitchen.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div id="contact" class="grid-item">
+        <h1>Contact Us</h1>
+        <p>Email: <a href="mailto:rkansingh857@gmail.com">rkansingh857@gmail.com</a></p>
+        <p>Phone: <a href="tel:8169943754">8169943754</a></p>
+    </div>
+</body>
+
+</html>

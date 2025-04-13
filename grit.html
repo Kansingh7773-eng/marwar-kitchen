@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>grid sample</title>
+	<style>
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background-color: rgb(10, 17, 1);
+		}
+		.grid-container{
+			display: grid;
+			grid-template-columns: 1fr 1fr; /*two columns*/
+			grid-template-rows: 1fr 1fr;/*two rows*/
+			gap: 10px;
+			width: 80%;
+			height: 80%;
+			background-color: aliceblue;
+		}
+		.grid-item{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid #01010a;
+			background-color: #9e8282;
+			padding: 10px;
+			text-align: center;
+		}
+		.grid-item img {
+			max-width: 70%;
+			height: auto;
+
+		}
+		.grid-item video{
+			max-width: 100%;
+			height: auto;
+		}
+		
+	</style>
+</head>	
+<body>
+<div class="grid-container">
+		<!--image-->
+	<div class="grid-item">
+		<img src="WhatsApp Image 2025-02-14 at 21.37.35.jpeg" alt="my photo" >
+
+		
+
+	</div>
+
+	<!--text-->
+	<div class="grid-item">
+	<p style="background-color: aquamarine;">this is the sample text description in the grid cell. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi officia in, quisquam a dolorum reprehenderit non dolor. Amet repellendus dolore et hic neque sequi libero perspiciatis quidem voluptate, perferendis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur velit et, quae sed voluptates officia corrupti accusamus nesciunt maiores nam voluptate, cum quidem debitis. Voluptas error quis nisi et ad.
+	Tempore repellendus porro magni odit sit modi officia natus eaque qui minima voluptatum culpa, necessitatibus incidunt. Deserunt unde laborum excepturi, veniam eveniet aperiam quibusdam, cumque assumenda quos, deleniti dolorem saepe.
+	Blanditiis tempora voluptas porro voluptatem, placeat sit beatae esse ducimus voluptate numquam! Aliquid aliquam libero, necessitatibus natus quibusdam velit! Pariatur autem eius eum repellendus labore! Dicta neque aliquid vitae praesentium?
+	Incidunt veritatis velit praesentium mollitia minima dicta soluta consequatur sapiente quasi voluptates? Nobis fuga aliquid, incidunt quisquam explicabo itaque aut! Ipsam sequi asperiores odio rerum amet accusamus dolorum repellendus laudantium.</p></div>
+	<!--video-->
+	<div class="grid-item">
+		<video controls>
+		<source src="my own project.htm/foodvi.mp4" type="video/mp4">
+		your browser does not support video tag</video>
+	</div>
+	<!--map-->
+	<div class="grid-item">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.7173109978644!2d73.36084547556241!3d22.288695779694986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fda2400192473%3A0xc319c9237f2928e8!2sParul%20University!5e0!3m2!1sen!2sin!4v1739269821706!5m2!1sen!2si" height="100%" width="100%"></iframe>
+	</div>
+
+
+</body>
+</html>
